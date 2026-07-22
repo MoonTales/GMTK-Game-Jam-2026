@@ -1,0 +1,33 @@
+using Managers;
+using UnityEngine;
+
+namespace System
+{
+    /// <summary>
+    /// SystemManager is a singleton class that manages core system functionalities, such as initializing subsystems,
+    /// initializing Managers, and handling global events.
+    /// </summary>
+    public class SystemManager : Singleton<SystemManager>
+    {
+        // Start is called before the first frame update
+        protected override void Awake()
+        {
+            base.Awake();
+            CreateManagers();
+        }
+        
+        
+
+        /// <summary>
+        /// Creates all required singleton managers for the game and attaches them to the SystemManager.
+        /// These are primary game managers that do not require any references added via the Unity Editor.
+        /// </summary>
+        private void CreateManagers()
+        {
+            // New managers should be added here in this method:
+            // gameObject.AddComponent<ManagerClassName>();
+            gameObject.AddComponent<SaveSystem>();
+            gameObject.AddComponent<StatsSystem>();
+        }
+    }
+}
