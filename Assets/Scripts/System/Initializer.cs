@@ -35,11 +35,7 @@ namespace System
 
             // Load the "PERSISTANTOBJECTS" prefab from Resources,
             // instantiate it, and mark it to not be destroyed when changing scenes.
-            UnityEngine.Object.DontDestroyOnLoad(
-                UnityEngine.Object.Instantiate(
-                    UnityEngine.Resources.Load("PERSISTANTOBJECTS")
-                )
-            );
+            // UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object.Instantiate(UnityEngine.Resources.Load("PERSISTANTOBJECTS")));
         }
     }
 }
