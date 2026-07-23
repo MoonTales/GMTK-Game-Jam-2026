@@ -1,0 +1,2119 @@
+fileFormatVersion: 2
+guid: 85f0f627875cecc408ef9df2c4492cd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3044494280579357878
+    second: robo repair_0
+  - first:
+      213: -769449772852586778
+    second: robo repair_1
+  - first:
+      213: 3039822334945545260
+    second: robo repair_2
+  - first:
+      213: 8416823107053155187
+    second: robo repair_3
+  - first:
+      213: -5874742395409389627
+    second: robo repair_4
+  - first:
+      213: -7108561414112006831
+    second: robo repair_5
+  - first:
+      213: -2027303653958753540
+    second: robo repair_6
+  - first:
+      213: -3250366253613043426
+    second: robo repair_7
+  - first:
+      213: 4784883036660266529
+    second: robo repair_8
+  - first:
+      213: -7629750989476893546
+    second: robo repair_9
+  - first:
+      213: 4380406124125845789
+    second: robo repair_10
+  - first:
+      213: 2203756381133305299
+    second: robo repair_11
+  - first:
+      213: -2901110351933966378
+    second: robo repair_12
+  - first:
+      213: 4032372688387429334
+    second: robo repair_13
+  - first:
+      213: -7567647510591971744
+    second: robo repair_14
+  - first:
+      213: -9166041923931325356
+    second: robo repair_15
+  - first:
+      213: -2406970078962059153
+    second: robo repair_16
+  - first:
+      213: -3144738747274942117
+    second: robo repair_17
+  - first:
+      213: 5177062943731845629
+    second: robo repair_18
+  - first:
+      213: 1641503400395846852
+    second: robo repair_19
+  - first:
+      213: -8483286008517000243
+    second: robo repair_20
+  - first:
+      213: -5047214579131007165
+    second: robo repair_21
+  - first:
+      213: -8333919293112673636
+    second: robo repair_22
+  - first:
+      213: -4211649977804240063
+    second: robo repair_23
+  - first:
+      213: -3919574492364035204
+    second: robo repair_24
+  - first:
+      213: -6400851145398007117
+    second: robo repair_25
+  - first:
+      213: 3373921693645743425
+    second: robo repair_26
+  - first:
+      213: 2545044630990078556
+    second: robo repair_27
+  - first:
+      213: -2173572473356117617
+    second: robo repair_28
+  - first:
+      213: 3537136496602963113
+    second: robo repair_29
+  - first:
+      213: 5887423428044502285
+    second: robo repair_30
+  - first:
+      213: -7232811295238074260
+    second: robo repair_31
+  - first:
+      213: -2722467930597920156
+    second: robo repair_32
+  - first:
+      213: 8290918617694147395
+    second: robo repair_33
+  - first:
+      213: 1394286475898260937
+    second: robo repair_34
+  - first:
+      213: -3542329066967543616
+    second: robo repair_35
+  - first:
+      213: 8099691534825829819
+    second: robo repair_36
+  - first:
+      213: 6573980081708291530
+    second: robo repair_37
+  - first:
+      213: -8735616283956622381
+    second: robo repair_38
+  - first:
+      213: -1989138542595827343
+    second: robo repair_39
+  - first:
+      213: -4407656708674177642
+    second: robo repair_40
+  - first:
+      213: -1167332837485002340
+    second: robo repair_41
+  - first:
+      213: 1536725493471966783
+    second: robo repair_42
+  - first:
+      213: -6457762925815821397
+    second: robo repair_43
+  - first:
+      213: 617424770163411712
+    second: robo repair_44
+  - first:
+      213: 4633786303481080333
+    second: robo repair_45
+  - first:
+      213: 4792101152539037778
+    second: robo repair_46
+  - first:
+      213: 2289730425643302379
+    second: robo repair_47
+  - first:
+      213: -4386117200142605505
+    second: robo repair_48
+  - first:
+      213: 1098667190825622092
+    second: robo repair_49
+  - first:
+      213: -1808922073700813482
+    second: robo repair_50
+  - first:
+      213: 3106320243359673103
+    second: robo repair_51
+  - first:
+      213: 51686594631840301
+    second: robo repair_52
+  - first:
+      213: -5615462542933208157
+    second: robo repair_53
+  - first:
+      213: -7342933416895329116
+    second: robo repair_54
+  - first:
+      213: -8330337066692772122
+    second: robo repair_55
+  - first:
+      213: -737916650687340079
+    second: robo repair_56
+  - first:
+      213: 8723877772056563361
+    second: robo repair_57
+  - first:
+      213: -8799555405530728243
+    second: robo repair_58
+  - first:
+      213: -7897535738476502113
+    second: robo repair_59
+  - first:
+      213: 1450326115119132673
+    second: robo repair_60
+  - first:
+      213: -6728184917342178046
+    second: robo repair_61
+  - first:
+      213: 6099684910425994492
+    second: robo repair_62
+  - first:
+      213: 842168509158545350
+    second: robo repair_63
+  - first:
+      213: -2941640751334548564
+    second: robo repair_64
+  - first:
+      213: -1197053416967242941
+    second: robo repair_65
+  - first:
+      213: -2601357245036146021
+    second: robo repair_66
+  - first:
+      213: -3197170293600765607
+    second: robo repair_67
+  - first:
+      213: 4774563090628420515
+    second: robo repair_68
+  - first:
+      213: -4424260141751512548
+    second: robo repair_69
+  - first:
+      213: 3050946935160343777
+    second: robo repair_70
+  - first:
+      213: -4797041189931114700
+    second: robo repair_71
+  - first:
+      213: 8925521383237927833
+    second: robo repair_72
+  - first:
+      213: -3899237197259601363
+    second: robo repair_73
+  - first:
+      213: 366787211839938562
+    second: robo repair_74
+  - first:
+      213: 6726132517672178514
+    second: robo repair_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robo repair_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1177
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43eb5d0598cfb5d0800000000000000
+      internalID: -3044494280579357878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1177
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6dd90228d5255f0800000000000000
+      internalID: -769449772852586778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1177
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c4ab6de4e9f2a20800000000000000
+      internalID: 3039822334945545260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1177
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373f33985009ec470800000000000000
+      internalID: 8416823107053155187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1147
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c722b6cae8b87ea0800000000000000
+      internalID: -5874742395409389627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1147
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d2ecf7e01595d90800000000000000
+      internalID: -7108561414112006831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1147
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2efed51129dd3e0800000000000000
+      internalID: -2027303653958753540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_7
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 815
+        width: 481
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e113a7f0d1164e2d0800000000000000
+      internalID: -3250366253613043426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1046
+        width: 82
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1267deb35c1576240800000000000000
+      internalID: 4784883036660266529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1101
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c6b8336edad1690800000000000000
+      internalID: -7629750989476893546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_10
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1090
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19777859245acc30800000000000000
+      internalID: 4380406124125845789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 947
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d573fca0c0559e10800000000000000
+      internalID: 2203756381133305299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1001
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d774c2718f2db7d0800000000000000
+      internalID: -2901110351933966378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 847
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3d15d789dd5f730800000000000000
+      internalID: 4032372688387429334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 901
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06edbc92fa05af690800000000000000
+      internalID: -7567647510591971744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_15
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 514
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c3cb71f6dabc080800000000000000
+      internalID: -9166041923931325356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_16
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 504
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68f8724779b89ed0800000000000000
+      internalID: -2406970078962059153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 495
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59254955c4ab54d0800000000000000
+      internalID: -3144738747274942117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 485
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df989fc615f98d740800000000000000
+      internalID: 5177062943731845629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 478
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4b03645aac7c610800000000000000
+      internalID: 1641503400395846852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_20
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 468
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc38d465250554a80800000000000000
+      internalID: -8483286008517000243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 475
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f39b1e411b4f9b0800000000000000
+      internalID: -5047214579131007165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_22
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 459
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a9e33de88f75c80800000000000000
+      internalID: -8333919293112673636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 465
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b42b2d8a63d85c0800000000000000
+      internalID: -4211649977804240063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 450
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ba5f714cfda99c0800000000000000
+      internalID: -3919574492364035204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_25
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 440
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba4662ebcb9b27a0800000000000000
+      internalID: -6400851145398007117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_26
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 411
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1452db197e392de20800000000000000
+      internalID: 3373921693645743425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_27
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 432
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52cdaf8b90d15320800000000000000
+      internalID: 2545044630990078556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_28
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 411
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f899a000a5be5d1e0800000000000000
+      internalID: -2173572473356117617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_29
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 411
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acd61237ee661130800000000000000
+      internalID: 3537136496602963113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 411
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05b7e63a6454b150800000000000000
+      internalID: 5887423428044502285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_31
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 411
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60d6e3b274ef9b90800000000000000
+      internalID: -7232811295238074260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_32
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 411
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462715467d9d73ad0800000000000000
+      internalID: -2722467930597920156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_33
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 411
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343155d3e824f0370800000000000000
+      internalID: 8290918617694147395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 411
+        width: 62
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd0c0f9920895310800000000000000
+      internalID: 1394286475898260937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_35
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 335
+        width: 99
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0dbdd4b7e17dec0800000000000000
+      internalID: -3542329066967543616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb538837982e76070800000000000000
+      internalID: 8099691534825829819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac557bacd087b3b50800000000000000
+      internalID: 6573980081708291530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_38
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbc5a4e54bd4c680800000000000000
+      internalID: -8735616283956622381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_39
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179998fc8092564e0800000000000000
+      internalID: -1989138542595827343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_40
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695bb93839bd4d2c0800000000000000
+      internalID: -4407656708674177642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_41
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91ce0718fccccfe0800000000000000
+      internalID: -1167332837485002340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36fea3c1bb835510800000000000000
+      internalID: 1536725493471966783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 389
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab8f0b65da6166a0800000000000000
+      internalID: -6457762925815821397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_44
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b0e15ae88819800800000000000000
+      internalID: 617424770163411712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_45
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a6f0897148e4040800000000000000
+      internalID: 4633786303481080333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_46
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25054dccb96f08240800000000000000
+      internalID: 4792101152539037778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_47
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed7fdbc0b1c6cf10800000000000000
+      internalID: 2289730425643302379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_48
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33e44625a16123c0800000000000000
+      internalID: -4386117200142605505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_49
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a99833dff3f3f00800000000000000
+      internalID: 1098667190825622092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65533b245fa65e6e0800000000000000
+      internalID: -1808922073700813482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 363
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bee08adcddb1b20800000000000000
+      internalID: 3106320243359673103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_52
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d223ea81fa0a7b000800000000000000
+      internalID: 51686594631840301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_53
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a354f6b19ed112b0800000000000000
+      internalID: -5615462542933208157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_54
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4accb9c36f8a81a90800000000000000
+      internalID: -7342933416895329116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_55
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eef188e292b46c80800000000000000
+      internalID: -8330337066692772122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_56
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d16fe147b462c5f0800000000000000
+      internalID: -737916650687340079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_57
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae8b53dc90711970800000000000000
+      internalID: 8723877772056563361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_58
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8f8ff0bf2b1e580800000000000000
+      internalID: -8799555405530728243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_59
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93e72bb611566290800000000000000
+      internalID: -7897535738476502113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_60
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100f524eae7902410800000000000000
+      internalID: 1450326115119132673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_61
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205bda2177fa0a2a0800000000000000
+      internalID: -6728184917342178046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_62
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf470c7cb1f66a450800000000000000
+      internalID: 6099684910425994492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_63
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c75a6d0ccbffab00800000000000000
+      internalID: 842168509158545350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_64
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab14e772513d27d0800000000000000
+      internalID: -2941640751334548564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_65
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bff707246336fe0800000000000000
+      internalID: -1197053416967242941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 339
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b925bb34e5f16ebd0800000000000000
+      internalID: -2601357245036146021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 317
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959be7bae8e51a3d0800000000000000
+      internalID: -3197170293600765607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_68
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 152
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3299e85d7a24240800000000000000
+      internalID: 4774563090628420515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_69
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 152
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c125bf087ded992c0800000000000000
+      internalID: -4424260141751512548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_70
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 152
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec8ccaa214275a20800000000000000
+      internalID: 3050946935160343777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_71
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 152
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f1d3d147c7d6db0800000000000000
+      internalID: -4797041189931114700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_72
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993cc0b9862dddb70800000000000000
+      internalID: 8925521383237927833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_73
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 15
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a0a5a9d6023e9c0800000000000000
+      internalID: -3899237197259601363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_74
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 15
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20020ed9607171500800000000000000
+      internalID: 366787211839938562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_75
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 15
+        width: 258
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253dd0463e5085d50800000000000000
+      internalID: 6726132517672178514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      robo repair_0: -3044494280579357878
+      robo repair_1: -769449772852586778
+      robo repair_10: 4380406124125845789
+      robo repair_11: 2203756381133305299
+      robo repair_12: -2901110351933966378
+      robo repair_13: 4032372688387429334
+      robo repair_14: -7567647510591971744
+      robo repair_15: -9166041923931325356
+      robo repair_16: -2406970078962059153
+      robo repair_17: -3144738747274942117
+      robo repair_18: 5177062943731845629
+      robo repair_19: 1641503400395846852
+      robo repair_2: 3039822334945545260
+      robo repair_20: -8483286008517000243
+      robo repair_21: -5047214579131007165
+      robo repair_22: -8333919293112673636
+      robo repair_23: -4211649977804240063
+      robo repair_24: -3919574492364035204
+      robo repair_25: -6400851145398007117
+      robo repair_26: 3373921693645743425
+      robo repair_27: 2545044630990078556
+      robo repair_28: -2173572473356117617
+      robo repair_29: 3537136496602963113
+      robo repair_3: 8416823107053155187
+      robo repair_30: 5887423428044502285
+      robo repair_31: -7232811295238074260
+      robo repair_32: -2722467930597920156
+      robo repair_33: 8290918617694147395
+      robo repair_34: 1394286475898260937
+      robo repair_35: -3542329066967543616
+      robo repair_36: 8099691534825829819
+      robo repair_37: 6573980081708291530
+      robo repair_38: -8735616283956622381
+      robo repair_39: -1989138542595827343
+      robo repair_4: -5874742395409389627
+      robo repair_40: -4407656708674177642
+      robo repair_41: -1167332837485002340
+      robo repair_42: 1536725493471966783
+      robo repair_43: -6457762925815821397
+      robo repair_44: 617424770163411712
+      robo repair_45: 4633786303481080333
+      robo repair_46: 4792101152539037778
+      robo repair_47: 2289730425643302379
+      robo repair_48: -4386117200142605505
+      robo repair_49: 1098667190825622092
+      robo repair_5: -7108561414112006831
+      robo repair_50: -1808922073700813482
+      robo repair_51: 3106320243359673103
+      robo repair_52: 51686594631840301
+      robo repair_53: -5615462542933208157
+      robo repair_54: -7342933416895329116
+      robo repair_55: -8330337066692772122
+      robo repair_56: -737916650687340079
+      robo repair_57: 8723877772056563361
+      robo repair_58: -8799555405530728243
+      robo repair_59: -7897535738476502113
+      robo repair_6: -2027303653958753540
+      robo repair_60: 1450326115119132673
+      robo repair_61: -6728184917342178046
+      robo repair_62: 6099684910425994492
+      robo repair_63: 842168509158545350
+      robo repair_64: -2941640751334548564
+      robo repair_65: -1197053416967242941
+      robo repair_66: -2601357245036146021
+      robo repair_67: -3197170293600765607
+      robo repair_68: 4774563090628420515
+      robo repair_69: -4424260141751512548
+      robo repair_7: -3250366253613043426
+      robo repair_70: 3050946935160343777
+      robo repair_71: -4797041189931114700
+      robo repair_72: 8925521383237927833
+      robo repair_73: -3899237197259601363
+      robo repair_74: 366787211839938562
+      robo repair_75: 6726132517672178514
+      robo repair_8: 4784883036660266529
+      robo repair_9: -7629750989476893546
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
