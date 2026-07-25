@@ -351,10 +351,38 @@ PrefabInstance:
       propertyPath: m_PixelsPerUnitMultiplier
       value: 2.27
       objectReference: {fileID: 0}
+    - target: {fileID: 1327723289686066611, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -1817952418, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    - target: {fileID: 1327723289686066611, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: -1817952418, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    - target: {fileID: 1997624368733258808, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -1368577377, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    - target: {fileID: 1997624368733258808, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: -1368577377, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    - target: {fileID: 3891784222751030089, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1134501344, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
     - target: {fileID: 4236779761991174835, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
       propertyPath: m_Name
       value: MainMenu_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4571819431401828430, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 33026980, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    - target: {fileID: 4705088097888966732, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2086908390, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
     - target: {fileID: 4745639228858863553, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -435,9 +463,48 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5345445477528572309, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345445477528572309, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345445477528572309, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345445477528572309, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345445477528572309, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -195
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665003286049871561, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665003286049871561, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665003286049871561, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665003286049871561, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7589279005030056380, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+    - {fileID: 954915938119970070, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+    - {fileID: 4481622029562003855, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
+    - {fileID: 8118010608214262154, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4861254897d60054bb70ef99480c5db3, type: 3}
