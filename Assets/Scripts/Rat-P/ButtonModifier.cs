@@ -227,9 +227,18 @@ public class ButtonModifier : MonoBehaviour
                 break;
             case ButtonActivityState.Activated:
                 _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteActivated();
+                if (_topWire.activeSelf) _topWire.GetComponent<SpriteAnimator>().SetDisabled(false);
+                if (_bottomWire.activeSelf) _bottomWire.GetComponent<SpriteAnimator>().SetDisabled(false);
+                if (_leftWire.activeSelf) _leftWire.GetComponent<SpriteAnimator>().SetDisabled(false);
+                if (_rightWire.activeSelf) _rightWire.GetComponent<SpriteAnimator>().SetDisabled(false);
                 break;
             case ButtonActivityState.NonActivated:
                 _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteNonActivated();
+                if (_topWire.activeSelf) _topWire.GetComponent<SpriteAnimator>().SetDisabled(true);
+                if (_bottomWire.activeSelf) _bottomWire.GetComponent<SpriteAnimator>().SetDisabled(true);
+                if (_leftWire.activeSelf) _leftWire.GetComponent<SpriteAnimator>().SetDisabled(true);
+                if (_rightWire.activeSelf) _rightWire.GetComponent<SpriteAnimator>().SetDisabled(true);
+                
                 break;
             case ButtonActivityState.Inactive:
                 _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteNone();
@@ -243,6 +252,7 @@ public class ButtonModifier : MonoBehaviour
         if (_bottomWire != null) _bottomWire.SetActive(wiresVisible.BottomWireVisible);
         if (_leftWire != null) _leftWire.SetActive(wiresVisible.LeftWireVisible);
         if (_rightWire != null) _rightWire.SetActive(wiresVisible.RightWireVisible);
+        SetButtonState(CurrentButtonState); // Update button state to reflect wire visibility changes
     }
 
     public void UpdateButtonVisuals()

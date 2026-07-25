@@ -425,6 +425,7 @@ namespace Rat_P
                         }
                         else
                         {
+                            /*
                             var (nextR, nextC) = path[i + 1];
                             int dr = nextR - r;
                             int dc = nextC - c;
@@ -432,6 +433,7 @@ namespace Rat_P
                             if (dc > 0) wires.RightWireVisible = true;
                             if (dr < 0) wires.TopWireVisible = true;
                             if (dr > 0) wires.BottomWireVisible = true;
+                            */
                         }
 
                         modifier.SetWiresVisible(wires);
