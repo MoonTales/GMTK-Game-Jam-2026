@@ -60,6 +60,11 @@ namespace Managers
             }
         }
         
+        public void AddScore(int amount)
+        {
+            currentScore += amount;
+        }
+        
         private IEnumerator StartGameScoreCoroutine()
         {
             // Reuse the yield instruction to avoid garbage collector allocations
@@ -68,7 +73,7 @@ namespace Managers
             while (true)
             {
                 yield return wait;
-                currentScore += 1;
+                currentScore += 5;
             }
         }
         

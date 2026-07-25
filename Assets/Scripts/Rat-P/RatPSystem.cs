@@ -61,7 +61,7 @@ namespace Rat_P
         // The copy will be the list we ACTUALLY use, since we dont always wanna use all the icons
         private List<ButtonIconData> _buttonIconDataListUssageCopy = new List<ButtonIconData>();
 
-        private float minigame_timelimit = 60f; // seconds
+        private float minigame_timelimit = 30f; // seconds
         private float elapsedTime = 0f;
 
         private bool bIsBacktracking = false; 
@@ -161,27 +161,30 @@ namespace Rat_P
             }
     
             // Check music state using time remaining percentage (works whether UI is open or closed)
-            float timeRemainingPercent = 1f - (elapsedTime / minigame_timelimit);
-
             // Warning Alarm (< 50% time)
-            if (timeRemainingPercent < 0.5f && !_isWarningPlaying)
+            if (_timerSlider == null)
+            {
+                return; // Exit early if _timerSlider is not assigned
+            }
+            
+            if (_timerSlider.value < 0.5f && !_isWarningPlaying)
             {
                 _isWarningPlaying = true;
                 UAudio.Instance.PlayMusic(UAudio.Instance.RATP_WarningAlarmMusic);
             }
-            else if (timeRemainingPercent >= 0.5f && _isWarningPlaying)
+            else if (_timerSlider.value >= 0.5f && _isWarningPlaying)
             {
                 _isWarningPlaying = false;
                 UAudio.Instance.StopMusic(UAudio.Instance.RATP_WarningAlarmMusic);
             }
 
             // Intense Music (< 20% time)
-            if (timeRemainingPercent < 0.20f && !_isIntensePlaying)
+            if (_timerSlider.value < 0.20f && !_isIntensePlaying)
             {
                 _isIntensePlaying = true;
                 UAudio.Instance.PlayMusic(UAudio.Instance.RatP_IntenseMusic);
             }
-            else if (timeRemainingPercent >= 0.20f && _isIntensePlaying)
+            else if (_timerSlider.value >= 0.20f && _isIntensePlaying)
             {
                 _isIntensePlaying = false;
                 UAudio.Instance.StopMusic(UAudio.Instance.RatP_IntenseMusic);
@@ -243,7 +246,21 @@ namespace Rat_P
         {
             SetBacktracking(true);
             UAudio.Instance.PlayRATP_SuccessSound();
-            elapsedTime = Mathf.Max(0f, elapsedTime - minigame_timelimit * 0.25f);
+            
+            // Calculte the score to award the player
+            // Calculate the amount of energy to reward the player
+            // these will be based on the length of the path.
+            int pathLength = buttonModifiers.Count;
+            // the minimum possible path length is equal to the number of rows, and the maximum possible path length is equal to the number of rows * columns
+            // if we are the minimum possible path, we will reward the player with 10 score, and if we are the max we will reward the player with 100 score
+            int scoreToAward = Mathf.RoundToInt(Mathf.Lerp(10, 100, (float)(pathLength - rows) / (rows * cols - rows)));
+            
+            // the same logic, but a minimum path will provide the player with 5 seconds of time, and a maximum path will provide the player with 15 seconds of time
+            float timeToAward = Mathf.Lerp(3f, 10f, (float)(pathLength - rows) / (rows * cols - rows));
+            
+            elapsedTime = Mathf.Max(0f, elapsedTime - timeToAward); // Subtract timeToAward from elapsedTime, but ensure it doesn't go below 0
+            
+            GameStateManager.Instance.AddScore(scoreToAward);
 
 
             
