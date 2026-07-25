@@ -135,6 +135,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 999984608513020709}
     m_Modifications:
+    - target: {fileID: 1246195609097084543, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
+      propertyPath: RATP_SuccessSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 20c9e7b4d2ac2f144bc4f0d3f70e7f29, type: 3}
+    - target: {fileID: 1246195609097084543, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
+      propertyPath: RATP_ButtonPressSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d678ef8c43a7106439d0a46ccb584516, type: 3}
+    - target: {fileID: 1246195609097084543, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
+      propertyPath: RATP_ButtonSuccessSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1369b241878f998468ff155641fbed49, type: 3}
+    - target: {fileID: 1246195609097084543, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
+      propertyPath: RATP_ElectricUpgradeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 75e0ac6628e1b7143b0de39b361fee1c, type: 3}
     - target: {fileID: 4738702015542113303, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
       propertyPath: m_Name
       value: UAudio

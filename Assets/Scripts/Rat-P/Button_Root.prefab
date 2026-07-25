@@ -160,10 +160,10 @@ MonoBehaviour:
   - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
-  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 1264836266, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   framesPerSecond: 5
   isDisabled: 0
-  playBackwards: 0
+  playBackwards: 1
 --- !u!1 &3273078515495678723
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,10 +455,10 @@ MonoBehaviour:
   - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
-  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 1264836266, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   framesPerSecond: 5
   isDisabled: 0
-  playBackwards: 0
+  playBackwards: 1
 --- !u!1 &6550892154471849303
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,10 +554,10 @@ MonoBehaviour:
   - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
-  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 1264836266, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   framesPerSecond: 5
   isDisabled: 0
-  playBackwards: 0
+  playBackwards: 1
 --- !u!1 &6996743386564470329
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,10 +653,10 @@ MonoBehaviour:
   - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
-  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 1264836266, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   framesPerSecond: 5
   isDisabled: 0
-  playBackwards: 0
+  playBackwards: 1
 --- !u!1 &8221574514498620974
 GameObject:
   m_ObjectHideFlags: 0

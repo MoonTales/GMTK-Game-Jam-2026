@@ -25,6 +25,9 @@ namespace Managers
         public AudioClip RATP_BacktrackSound;
         public AudioClip RATP_ButtonPressSound;
         public AudioClip RATP_ButtonFailSound;
+        public AudioClip RATP_ButtonSuccessSound;
+        public AudioClip RATP_SuccessSound;
+        public AudioClip RATP_ElectricUpgradeSound;
         
         [Header("RatP Music")]
         public AudioClip RATP_BacktrackMusic;
@@ -129,6 +132,18 @@ namespace Managers
             }
         }
         
+        public void PlayRATP_SuccessSound()
+        {
+            PlaySFX(RATP_SuccessSound, volume: 1f, deviation: 0.1f);
+        }
+        public void PlayRATP_ElectricUpgradeSound(float volume = 1f)
+        {
+            PlaySFX(RATP_ElectricUpgradeSound, volume: 1f, deviation: 0.1f);
+        }
+        public void PlayRATP_ButtonSuccessSound()
+        {
+            PlaySFX(RATP_ButtonSuccessSound, volume: 1f, deviation: 0.1f);
+        }
         public void PlayMusic_RATP_BacktrackMusic()
         {
             PlayMusic(RATP_BacktrackMusic, volume: 1f, deviation: 0.1f);

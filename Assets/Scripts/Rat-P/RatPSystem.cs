@@ -44,7 +44,40 @@ namespace Rat_P
         
         private bool _isWarningPlaying = false;
         private bool _isIntensePlaying = false;
-        
+
+        public void InitializeGame()
+        {
+            // we could also just start with this open lol
+            StartCoroutine(StartMinigameTimer());
+        }
+        IEnumerator StartMinigameTimer()
+        {
+            yield return new WaitForSeconds(0.5f);
+            if (contentParent)
+            {
+                currentPanelInstance = Instantiate(contentParent.gameObject, contentParent.parent);
+                 
+
+                // Direct search for Slider named "Timer_Slider" among inactive children
+                Slider[] sliders = currentPanelInstance.GetComponentsInChildren<Slider>(true);
+                foreach (Slider s in sliders)
+                {
+                    if (s.gameObject.name == "Timer_Slider")
+                    {
+                        _timerSlider = s;
+                        break;
+                    }
+                }
+
+                if (_timerSlider != null)
+                {
+                    StartCoroutine(UpdateTimerSlider());
+                }
+                
+                //PopulateGrid(currentPanelInstance.transform);
+                ToggleRatP(true); // Open the RatP UI immediately after initialization
+            }
+        }
         public void Update()
         {
             if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
@@ -71,13 +104,13 @@ namespace Rat_P
                 UAudio.Instance.StopMusic(UAudio.Instance.RATP_WarningAlarmMusic);
             }
 
-            // Intense Music (< 15% time)
-            if (timeRemainingPercent < 0.15f && !_isIntensePlaying)
+            // Intense Music (< 20% time)
+            if (timeRemainingPercent < 0.20f && !_isIntensePlaying)
             {
                 _isIntensePlaying = true;
                 UAudio.Instance.PlayMusic(UAudio.Instance.RatP_IntenseMusic);
             }
-            else if (timeRemainingPercent >= 0.15f && _isIntensePlaying)
+            else if (timeRemainingPercent >= 0.20f && _isIntensePlaying)
             {
                 _isIntensePlaying = false;
                 UAudio.Instance.StopMusic(UAudio.Instance.RatP_IntenseMusic);
@@ -86,30 +119,7 @@ namespace Rat_P
 
         public void Start()
         {
-            if (contentParent)
-            {
-                currentPanelInstance = Instantiate(contentParent.gameObject, contentParent.parent);
-                 
 
-                // Direct search for Slider named "Timer_Slider" among inactive children
-                Slider[] sliders = currentPanelInstance.GetComponentsInChildren<Slider>(true);
-                foreach (Slider s in sliders)
-                {
-                    if (s.gameObject.name == "Timer_Slider")
-                    {
-                        _timerSlider = s;
-                        break;
-                    }
-                }
-
-                if (_timerSlider != null)
-                {
-                    StartCoroutine(UpdateTimerSlider());
-                }
-                
-                // at the very end, we diable
-                currentPanelInstance.SetActive(false);
-            }
         }
 
         public void SetCurrentButtonInd(int index, bool resetIfExceeds = true)
@@ -128,16 +138,13 @@ namespace Rat_P
         private void ResetMinigame()
         {
             SetBacktracking(true);
-            print("Resetting minigame");
-            CurrentButtonInd = 0;
-            SetCurrentButtonInd(0, false);
-            // we dont wanna reset the timer, instead we wanna make it feel like we gained 25% of the total time, clamped to the max time limit
+            UAudio.Instance.PlayRATP_SuccessSound();
             elapsedTime = Mathf.Max(0f, elapsedTime - minigame_timelimit * 0.25f);
-            PopulateGrid(currentPanelInstance.transform);
+
+
             
-            // There is a bug here, where after we reset the minigame, it takes in the last input from the player
-            // we will add a VERY slight delay before we allow the player to input again, to avoid this issue
-            StartCoroutine(ResetInputDelayCoroutine());
+            // we want to backtrack
+            StartCoroutine(BacktrackCoroutine(false));
         }
         IEnumerator ResetInputDelayCoroutine()
         {
@@ -145,9 +152,15 @@ namespace Rat_P
             SetBacktracking(false);
         }
 
-        public void ToggleRatP()
+        public void ToggleRatP(bool forceOpen = false)
         {
-            if (currentPanelInstance.activeSelf)
+            // if we havent been created yet, create before we do anything else
+            if(currentPanelInstance == null)
+            {
+                InitializeGame();
+            }
+            
+            if (currentPanelInstance.activeSelf && !forceOpen)
             {
                 UAudio.Instance.StopMusic_RATP_BacktrackMusic();
                 CloseRatP();
@@ -185,6 +198,13 @@ namespace Rat_P
             // Don't reset elapsedTime to 0 here if you want a continuous background timer!
             while (elapsedTime < minigame_timelimit)
             {
+                // we are gonna skip if we are currently back tracking, since its not fair to the user
+                if (IsBacktracking())
+                {
+                    yield return null;
+                    continue;
+                }
+                
                 elapsedTime += Time.deltaTime;
 
                 // ONLY update UI components when active in hierarchy to prevent TLS memory errors
@@ -309,10 +329,10 @@ namespace Rat_P
         {
             SetBacktracking(true);
             UAudio.Instance.PlayRATP_PlayGridBacktrackSound();
-            StartCoroutine(BacktrackCoroutine());
+            StartCoroutine(BacktrackCoroutine(true));
         }
 
-        IEnumerator BacktrackCoroutine()
+        IEnumerator BacktrackCoroutine(bool bFail = true)
         {
             yield return new WaitForSeconds(1f);
 
@@ -321,14 +341,37 @@ namespace Rat_P
                 if (i < buttonModifiers.Count && buttonModifiers[i] != null)
                 {
                     ButtonModifier modifier = buttonModifiers[i];
-                    UAudio.Instance.PlayRATP_ButtonFailSound();
+                    if (bFail)
+                    {
+                        UAudio.Instance.PlayRATP_ButtonFailSound();
+                    }
+                    else
+                    {
+                        // WE WILL PLAY A DIFFERENT SOUND HERE
+                        UAudio.Instance.PlayRATP_ButtonSuccessSound();
+                    }
+                    
                     modifier.SetButtonState(ButtonActivityState.NonActivated);
                     yield return new WaitForSeconds(0.2f);
                 }
             }
 
             SetCurrentButtonInd(0, false);
+            if (!bFail)
+            {
+                // if it was a success, we rebuild the game
+                PopulateGrid(currentPanelInstance.transform);
+                // There is a bug here, where after we reset the minigame, it takes in the last input from the player
+                // we will add a VERY slight delay before we allow the player to input again, to avoid this issue
+                StartCoroutine(ResetInputDelayCoroutine());
+            }
+
             SetBacktracking(false);
+            if (!bFail)
+            {
+                // if it was a success, we rebuild the game
+                UAudio.Instance.PlayRATP_ElectricUpgradeSound(0.5f);
+            }
         }
 
         private void GeneratePath()
