@@ -5,6 +5,7 @@ using Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Rat_P
@@ -44,10 +45,13 @@ namespace Rat_P
         
         private bool _isWarningPlaying = false;
         private bool _isIntensePlaying = false;
+        
 
         public void InitializeGame()
         {
             // we could also just start with this open lol
+            // reset the timer
+            elapsedTime = 0f;
             StartCoroutine(StartMinigameTimer());
         }
         IEnumerator StartMinigameTimer()
@@ -213,6 +217,18 @@ namespace Rat_P
                     _timerSlider.value = 1f - (elapsedTime / minigame_timelimit);
                     // clamp
                     _timerSlider.value = Mathf.Clamp01(_timerSlider.value);
+                }
+                
+                // if the value ever hits 0
+                if (_timerSlider != null && _timerSlider.value <= 0f)
+                {
+                    // Time's up logic here
+                    // cancel the current timer
+                    elapsedTime = minigame_timelimit; // Ensure it doesn't go negative
+                    UAudio.Instance.StopMusic_RATP_BacktrackMusic();
+                    CloseRatP();
+                    UAudio.Instance.StopAllMusic();
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
                 }
 
                 yield return null;
