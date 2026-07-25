@@ -240,7 +240,9 @@ namespace Rat_P
 
                     if (modifier != null)
                     {
-                        ButtonIconData iconData = new ButtonIconData(ButtonOption.NONE, null);
+                        // We will just fill it with the NON from a random icon data, since we will generate the path later and assign the correct icon data to the buttons that are part of the path
+                        ButtonIconData randomIconData = _buttonIconDataList[UnityEngine.Random.Range(0, _buttonIconDataList.Count)];
+                        ButtonIconData iconData = new ButtonIconData(ButtonOption.NONE, randomIconData.GetButtonIconSprite(), randomIconData.GetButtonSpriteNone(), randomIconData.GetButtonSpriteNonActivated(), randomIconData.GetButtonSpriteActivated());
                         modifier.SetButtonIconData(iconData);
                         modifier.UpdateButtonVisuals();
                     }

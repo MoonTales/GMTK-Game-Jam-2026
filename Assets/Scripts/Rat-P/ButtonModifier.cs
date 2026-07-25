@@ -5,6 +5,7 @@ using Rat_P;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public enum ButtonActivityState
@@ -41,15 +42,24 @@ public struct ButtonIconData
 {
     [SerializeField] private ButtonOption buttonOption;
     [SerializeField] private Sprite buttonIconSprite;
+    [SerializeField] private Sprite buttonSpriteNone;
+    [SerializeField] private Sprite buttonSpriteNonActivated;
+    [SerializeField] private Sprite buttonSpriteActivated;
 
-    public ButtonIconData(ButtonOption option, Sprite icon = null)
+    public ButtonIconData(ButtonOption option, Sprite icon = null, Sprite spriteNone = null, Sprite spriteNonActivated = null, Sprite spriteActivated = null)
     {
         buttonOption = option;
         buttonIconSprite = icon;
+        buttonSpriteNone = spriteNone;
+        buttonSpriteNonActivated = spriteNonActivated;
+        buttonSpriteActivated = spriteActivated;
     }
 
     public ButtonOption GetButtonOption() => buttonOption;
     public Sprite GetButtonIconSprite() => buttonIconSprite;
+    public Sprite GetButtonSpriteNone() => buttonSpriteNone;
+    public Sprite GetButtonSpriteNonActivated() => buttonSpriteNonActivated;
+    public Sprite GetButtonSpriteActivated() => buttonSpriteActivated;
 }
 
 public class ButtonModifier : MonoBehaviour
@@ -213,17 +223,16 @@ public class ButtonModifier : MonoBehaviour
         switch (CurrentButtonState)
         {
             case ButtonActivityState.NonSelected:
-                _buttonImage.color = Color.grey;
-                _button.SetActive(true);
+                _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteNone();
                 break;
             case ButtonActivityState.Activated:
-                _buttonImage.color = Color.green;
+                _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteActivated();
                 break;
             case ButtonActivityState.NonActivated:
-                _buttonImage.color = Color.orange;
+                _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteNonActivated();
                 break;
             case ButtonActivityState.Inactive:
-                _buttonImage.color = Color.red;
+                _buttonImage.sprite = CurrentButtonIconData.GetButtonSpriteNone();
                 break;
         }
     }
@@ -243,9 +252,9 @@ public class ButtonModifier : MonoBehaviour
 
         if (_iconImage != null)
         {
+            
             _iconImage.sprite = CurrentButtonIconData.GetButtonIconSprite();
         }
-
         // Always enable input actions so we can catch both correct AND wrong keys
         EnableAllActions();
     }

@@ -54,14 +54,32 @@ MonoBehaviour:
   _buttonIconDataList:
   - buttonOption: 0
     buttonIconSprite: {fileID: 8723877772056563361, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - buttonOption: 1
     buttonIconSprite: {fileID: -8330337066692772122, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - buttonOption: 2
     buttonIconSprite: {fileID: -737916650687340079, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - buttonOption: 3
     buttonIconSprite: {fileID: -5615462542933208157, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - buttonOption: 4
     buttonIconSprite: {fileID: 3106320243359673103, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - buttonOption: 5
     buttonIconSprite: {fileID: 1098667190825622092, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   CurrentButtonInd: 0
