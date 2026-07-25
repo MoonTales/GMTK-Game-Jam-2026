@@ -162,19 +162,14 @@ public class ButtonModifier : MonoBehaviour
         {
             _buttonImage.color = Color.grey;
         }
-
-        if (_uiButton != null)
-        {
-            _uiButton.onClick.AddListener(OnButtonClicked);
-        }
-
+        
         // Ensure visuals and keybindings are properly applied on start
         UpdateButtonVisuals();
     }
 
     private void OnInputTriggered(ButtonOption pressedOption)
     {
-// Check if this button is currently targeted by the system
+        // Check if this button is currently targeted by the system
         if (RatPSystem.Instance != null && RatPSystem.Instance.GetCurrentButtonInd() == ButtonIndex)
         {
             if (RatPSystem.Instance.IsBacktracking()) return;
@@ -184,7 +179,8 @@ public class ButtonModifier : MonoBehaviour
             // 1. Correct key pressed!
             if (pressedOption == requiredOption)
             {
-                _uiButton?.onClick.Invoke();
+                // Call your logic directly instead of invoking the UI button click
+                OnButtonClicked();
             }
             // 2. Wrong key pressed! (e.g. required 'W', but pressed 'S')
             else
