@@ -62,6 +62,9 @@ MonoBehaviour:
   CurrentButtonIconData:
     buttonOption: 0
     buttonIconSprite: {fileID: 0}
+    buttonSpriteNone: {fileID: 0}
+    buttonSpriteNonActivated: {fileID: 0}
+    buttonSpriteActivated: {fileID: 0}
 --- !u!1 &2992991568058231573
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,6 +76,7 @@ GameObject:
   - component: {fileID: 5949142314705054582}
   - component: {fileID: 3619753072588912236}
   - component: {fileID: 7791477521458873263}
+  - component: {fileID: 3869228261130232752}
   m_Layer: 0
   m_Name: Wire_Bottom
   m_TagString: Untagged
@@ -137,6 +141,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3869228261130232752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2992991568058231573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145818288e5ee2744b89fa7e59c28475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteAnimator
+  frames:
+  - {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 2289730425643302379, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -4386117200142605505, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  framesPerSecond: 5
+  isDisabled: 0
+  playBackwards: 0
 --- !u!1 &3273078515495678723
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +371,7 @@ GameObject:
   - component: {fileID: 3974385516895495708}
   - component: {fileID: 2861668502511176079}
   - component: {fileID: 6116165320581268722}
+  - component: {fileID: 7783148115980055021}
   m_Layer: 0
   m_Name: Wire_Right
   m_TagString: Untagged
@@ -408,6 +436,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7783148115980055021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6056923034425103253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145818288e5ee2744b89fa7e59c28475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteAnimator
+  frames:
+  - {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 2289730425643302379, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -4386117200142605505, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  framesPerSecond: 5
+  isDisabled: 0
+  playBackwards: 0
 --- !u!1 &6550892154471849303
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +470,7 @@ GameObject:
   - component: {fileID: 458350520491724723}
   - component: {fileID: 2734789188170581770}
   - component: {fileID: 1540034019782193671}
+  - component: {fileID: 6475383506555785193}
   m_Layer: 0
   m_Name: Wire_Left
   m_TagString: Untagged
@@ -483,6 +535,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6475383506555785193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6550892154471849303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145818288e5ee2744b89fa7e59c28475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteAnimator
+  frames:
+  - {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 2289730425643302379, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -4386117200142605505, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  framesPerSecond: 5
+  isDisabled: 0
+  playBackwards: 0
 --- !u!1 &6996743386564470329
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +569,7 @@ GameObject:
   - component: {fileID: 4545509116481272807}
   - component: {fileID: 8750843401713766476}
   - component: {fileID: 2636643117538905796}
+  - component: {fileID: 7442628086541339427}
   m_Layer: 0
   m_Name: Wire_Top
   m_TagString: Untagged
@@ -558,6 +634,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7442628086541339427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996743386564470329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145818288e5ee2744b89fa7e59c28475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteAnimator
+  frames:
+  - {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 2289730425643302379, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -4386117200142605505, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -1808922073700813482, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: 51686594631840301, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - {fileID: -7342933416895329116, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  disabledSprite: {fileID: 4792101152539037778, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  framesPerSecond: 5
+  isDisabled: 0
+  playBackwards: 0
 --- !u!1 &8221574514498620974
 GameObject:
   m_ObjectHideFlags: 0
