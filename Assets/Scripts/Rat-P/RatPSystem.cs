@@ -280,9 +280,8 @@ namespace Rat_P
                 if (i < buttonModifiers.Count && buttonModifiers[i] != null)
                 {
                     ButtonModifier modifier = buttonModifiers[i];
-                    modifier.SetButtonState(ButtonActivityState.NonActivated);
-                    yield return new WaitForSeconds(0.15f);
                     UAudio.Instance.PlayRATP_ButtonFailSound();
+                    modifier.SetButtonState(ButtonActivityState.NonActivated);
                     yield return new WaitForSeconds(0.2f);
                 }
             }
