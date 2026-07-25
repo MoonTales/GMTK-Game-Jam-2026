@@ -99,6 +99,14 @@ namespace Rat_P
             // we dont wanna reset the timer, instead we wanna make it feel like we gained 25% of the total time, clamped to the max time limit
             elapsedTime = Mathf.Max(0f, elapsedTime - minigame_timelimit * 0.25f);
             PopulateGrid(currentPanelInstance.transform);
+            
+            // There is a bug here, where after we reset the minigame, it takes in the last input from the player
+            // we will add a VERY slight delay before we allow the player to input again, to avoid this issue
+            StartCoroutine(ResetInputDelayCoroutine());
+        }
+        IEnumerator ResetInputDelayCoroutine()
+        {
+            yield return new WaitForSeconds(0.1f);
             SetBacktracking(false);
         }
 
