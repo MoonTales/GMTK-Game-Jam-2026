@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Managers;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -10,11 +12,35 @@ using UnityEngine.UI;
 
 namespace Rat_P
 {
+    
+    
+    // struct to hold the different difficulties of the game
+    
+    [Serializable]
+    public enum RatPGameDifficultyLevel
+    {
+        Beginner,
+        Easy,
+        Medium,
+        Hard,
+        Extreme,
+        Nightmare
+    }
+    
+    [Serializable]
+    public struct RatPGameDifficultyData
+    {
+        public RatPGameDifficultyLevel difficultyLevel;
+        public List<ButtonOption> buttonsToUse;
+        public float energyDrainRateMultiplier;
+    }
+    
     public class RatPSystem : Singleton<RatPSystem>
     {
         [Header("UI References")] 
         [SerializeField] private Transform contentParent; // The Canvas / Panel template
-
+        
+        
         private Slider _timerSlider;
         [SerializeField] private GameObject buttonPrefab; // Your Button UI Prefab
         [SerializeField] private GameObject wirePrefab;
@@ -27,12 +53,15 @@ namespace Rat_P
 
         private List<List<GameObject>> grid = new List<List<GameObject>>();
         private GameObject currentPanelInstance;
+        private TMP_Text _scoreText;
         private List<ButtonModifier> buttonModifiers = new List<ButtonModifier>();
 
         [Header("Setup Params")]
         [SerializeField] private List<ButtonIconData> _buttonIconDataList = new List<ButtonIconData>();
+        // The copy will be the list we ACTUALLY use, since we dont always wanna use all the icons
+        private List<ButtonIconData> _buttonIconDataListUssageCopy = new List<ButtonIconData>();
 
-        private float minigame_timelimit = 30f; // seconds
+        private float minigame_timelimit = 60f; // seconds
         private float elapsedTime = 0f;
 
         private bool bIsBacktracking = false; 
@@ -46,13 +75,46 @@ namespace Rat_P
         private bool _isWarningPlaying = false;
         private bool _isIntensePlaying = false;
         
+        [Header("Difficulty Options")]
+        public RatPGameDifficultyLevel currentDifficulty = RatPGameDifficultyLevel.Beginner;
+        public List<RatPGameDifficultyData> difficultySettings;  
+        public float EasyDifficultyScoreThreshold = 20f;
+        public float MediumDifficultyScoreThreshold = 40f;
+        public float HardDifficultyScoreThreshold = 60f;
+        public float ExtremeDifficultyScoreThreshold = 80f;
+        public float NightmareDifficultyScoreThreshold = 100f;
 
         public void InitializeGame()
         {
-            // we could also just start with this open lol
+            
+            SetDifficulty(currentDifficulty);
             // reset the timer
             elapsedTime = 0f;
             StartCoroutine(StartMinigameTimer());
+            
+            // We will start the score timer, we will tell the Gamestate to start counting score
+            GameStateManager.Instance.StartGameScore();
+        }
+        
+        public void SetDifficulty(RatPGameDifficultyLevel difficulty)
+        {
+            
+            currentDifficulty = difficulty;
+            for (int i = 0; i < difficultySettings.Count; i++)
+            {
+                if (difficultySettings[i].difficultyLevel == currentDifficulty)
+                {
+                    // we found the matching difficulty, now we will set the _buttonIconDataListUssageCopy to the buttonsToUse of that difficulty
+                    _buttonIconDataListUssageCopy.Clear();
+                    foreach (ButtonOption buttonOption in difficultySettings[i].buttonsToUse)
+                    {
+                        // find the ButtonIconData in _buttonIconDataList that matches this buttonOption
+                        ButtonIconData iconData = _buttonIconDataList.Find(data => data.GetButtonOption() == buttonOption);
+                        _buttonIconDataListUssageCopy.Add(iconData);
+                    }
+                    break;
+                }
+            }
         }
         IEnumerator StartMinigameTimer()
         {
@@ -62,6 +124,11 @@ namespace Rat_P
                 currentPanelInstance = Instantiate(contentParent.gameObject, contentParent.parent);
                  
 
+                
+                // look through all childred, active or inactive, and find the TMP_Text component on the objkect called "Text_Score"
+                _scoreText = currentPanelInstance.GetComponentsInChildren<TMP_Text>(true).FirstOrDefault(t => t.gameObject.name == "Text_Score");
+                
+                
                 // Direct search for Slider named "Timer_Slider" among inactive children
                 Slider[] sliders = currentPanelInstance.GetComponentsInChildren<Slider>(true);
                 foreach (Slider s in sliders)
@@ -84,7 +151,7 @@ namespace Rat_P
         }
         public void Update()
         {
-            if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
+            if (Keyboard.current != null && Keyboard.current.pKey.wasPressedThisFrame)
             {
                 ToggleRatP();
             }
@@ -118,6 +185,39 @@ namespace Rat_P
             {
                 _isIntensePlaying = false;
                 UAudio.Instance.StopMusic(UAudio.Instance.RatP_IntenseMusic);
+            }
+            
+            // --------------- Score difficulty checks here ----
+            int currentGameScore = GameStateManager.Instance.GetCurrentScore();
+
+            if (currentGameScore >= NightmareDifficultyScoreThreshold)
+            {
+                SetDifficulty(RatPGameDifficultyLevel.Nightmare);
+            }
+            else if (currentGameScore >= ExtremeDifficultyScoreThreshold)
+            {
+                SetDifficulty(RatPGameDifficultyLevel.Extreme);
+            }
+            else if (currentGameScore >= HardDifficultyScoreThreshold)
+            {
+                SetDifficulty(RatPGameDifficultyLevel.Hard);
+            }
+            else if (currentGameScore >= MediumDifficultyScoreThreshold)
+            {
+                SetDifficulty(RatPGameDifficultyLevel.Medium);
+            }
+            else if (currentGameScore >= EasyDifficultyScoreThreshold)
+            {
+                SetDifficulty(RatPGameDifficultyLevel.Easy);
+            }
+            else
+            {
+                SetDifficulty(RatPGameDifficultyLevel.Beginner);
+            }
+
+            if (_scoreText)
+            {
+                _scoreText.text = "Score: " + currentGameScore.ToString();
             }
         }
 
@@ -214,7 +314,12 @@ namespace Rat_P
                 // ONLY update UI components when active in hierarchy to prevent TLS memory errors
                 if (currentPanelInstance != null && currentPanelInstance.activeInHierarchy && _timerSlider != null)
                 {
-                    _timerSlider.value = 1f - (elapsedTime / minigame_timelimit);
+                    // get the current dificulty multiplier
+                    float difficultyMultiplier = 1f;
+                    RatPGameDifficultyData currentDifficultyData = difficultySettings.Find(data => data.difficultyLevel == currentDifficulty);
+                    difficultyMultiplier = currentDifficultyData.energyDrainRateMultiplier;
+                    
+                    _timerSlider.value = 1f - ((elapsedTime / minigame_timelimit) * difficultyMultiplier) ;
                     // clamp
                     _timerSlider.value = Mathf.Clamp01(_timerSlider.value);
                 }
@@ -229,6 +334,7 @@ namespace Rat_P
                     CloseRatP();
                     UAudio.Instance.StopAllMusic();
                     UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+                    GameStateManager.Instance.StopGameScore();
                 }
 
                 yield return null;
@@ -316,7 +422,7 @@ namespace Rat_P
                     if (modifier != null)
                     {
                         // We will just fill it with the NON from a random icon data, since we will generate the path later and assign the correct icon data to the buttons that are part of the path
-                        ButtonIconData randomIconData = _buttonIconDataList[UnityEngine.Random.Range(0, _buttonIconDataList.Count)];
+                        ButtonIconData randomIconData = _buttonIconDataListUssageCopy[UnityEngine.Random.Range(0, _buttonIconDataListUssageCopy.Count)];
                         ButtonIconData iconData = new ButtonIconData(ButtonOption.NONE, randomIconData.GetButtonIconSprite(), randomIconData.GetButtonSpriteNone(), randomIconData.GetButtonSpriteNonActivated(), randomIconData.GetButtonSpriteActivated());
                         modifier.SetButtonIconData(iconData);
                         modifier.UpdateButtonVisuals();
@@ -452,9 +558,9 @@ namespace Rat_P
                         modifier.SetButtonState(ButtonActivityState.NonActivated);
                         modifier.SetButtonIndex(currentButtonIndex);
 
-                        if (_buttonIconDataList != null && _buttonIconDataList.Count > 0)
+                        if (_buttonIconDataListUssageCopy != null && _buttonIconDataListUssageCopy.Count > 0)
                         {
-                            ButtonIconData iconData = _buttonIconDataList[UnityEngine.Random.Range(0, _buttonIconDataList.Count)];
+                            ButtonIconData iconData = _buttonIconDataListUssageCopy[UnityEngine.Random.Range(0, _buttonIconDataListUssageCopy.Count)];
                             modifier.SetButtonIconData(iconData);
                         }
 

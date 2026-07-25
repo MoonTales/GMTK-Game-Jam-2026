@@ -34,6 +34,12 @@ public enum ButtonOption
     D,
     Q,
     E,
+    R,
+    T,
+    Y,
+    F,
+    G,
+    H,
     NONE
 }
 
@@ -87,6 +93,13 @@ public class ButtonModifier : MonoBehaviour
     private InputAction _dKeyAction;
     private InputAction _qKeyAction;
     private InputAction _eKeyAction;
+    private InputAction _rKeyAction;
+    private InputAction _tKeyAction;
+    private InputAction _yKeyAction;
+    private InputAction _fKeyAction;
+    private InputAction _gKeyAction;
+    private InputAction _hKeyAction;
+    private InputAction _noneKeyAction;
 
     public void SetButtonIndex(int index) => ButtonIndex = index;
     public void SetButtonIconData(ButtonIconData data) => CurrentButtonIconData = data;
@@ -121,6 +134,12 @@ public class ButtonModifier : MonoBehaviour
         _dKeyAction = new InputAction("D_Key", binding: "<Keyboard>/d");
         _qKeyAction = new InputAction("Q_Key", binding: "<Keyboard>/q");
         _eKeyAction = new InputAction("E_Key", binding: "<Keyboard>/e");
+        _rKeyAction = new InputAction("R_Key", binding: "<Keyboard>/r");
+        _tKeyAction = new InputAction("T_Key", binding: "<Keyboard>/t");
+        _yKeyAction = new InputAction("Y_Key", binding: "<Keyboard>/y");
+        _fKeyAction = new InputAction("F_Key", binding: "<Keyboard>/f");
+        _gKeyAction = new InputAction("G_Key", binding: "<Keyboard>/g");
+        _hKeyAction = new InputAction("H_Key", binding: "<Keyboard>/h");
 
         // Bind responses
         _wKeyAction.performed += ctx => OnInputTriggered(ButtonOption.W);
@@ -129,6 +148,12 @@ public class ButtonModifier : MonoBehaviour
         _dKeyAction.performed += ctx => OnInputTriggered(ButtonOption.D);
         _qKeyAction.performed += ctx => OnInputTriggered(ButtonOption.Q);
         _eKeyAction.performed += ctx => OnInputTriggered(ButtonOption.E);
+        _rKeyAction.performed += ctx => OnInputTriggered(ButtonOption.R);
+        _tKeyAction.performed += ctx => OnInputTriggered(ButtonOption.T);
+        _yKeyAction.performed += ctx => OnInputTriggered(ButtonOption.Y);
+        _fKeyAction.performed += ctx => OnInputTriggered(ButtonOption.F);
+        _gKeyAction.performed += ctx => OnInputTriggered(ButtonOption.G);
+        _hKeyAction.performed += ctx => OnInputTriggered(ButtonOption.H);
     }
 
     private void Start()
@@ -276,6 +301,12 @@ public class ButtonModifier : MonoBehaviour
         _dKeyAction?.Enable();
         _qKeyAction?.Enable();
         _eKeyAction?.Enable();
+        _rKeyAction?.Enable();
+        _tKeyAction?.Enable();
+        _yKeyAction?.Enable();
+        _fKeyAction?.Enable();
+        _gKeyAction?.Enable();
+        _hKeyAction?.Enable();
     }
 
     private void DisableAllActions()
@@ -286,6 +317,12 @@ public class ButtonModifier : MonoBehaviour
         _dKeyAction?.Disable();
         _qKeyAction?.Disable();
         _eKeyAction?.Disable();
+        _rKeyAction?.Disable();
+        _tKeyAction?.Disable();
+        _yKeyAction?.Disable();
+        _fKeyAction?.Disable();
+        _gKeyAction?.Disable();
+        _hKeyAction?.Disable();
     }
 
     private void OnDisable()
@@ -300,5 +337,13 @@ public class ButtonModifier : MonoBehaviour
         _aKeyAction?.Dispose();
         _aKeyAction?.Dispose();
         _dKeyAction?.Dispose();
+        _qKeyAction?.Dispose();
+        _eKeyAction?.Dispose();
+        _rKeyAction?.Dispose();
+        _tKeyAction?.Dispose();
+        _yKeyAction?.Dispose();
+        _fKeyAction?.Dispose();
+        _gKeyAction?.Dispose();
+        _hKeyAction?.Dispose();
     }
 }

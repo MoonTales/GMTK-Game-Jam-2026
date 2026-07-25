@@ -82,4 +82,59 @@ MonoBehaviour:
     buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
     buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
     buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 6
+    buttonIconSprite: {fileID: 371759325, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 7
+    buttonIconSprite: {fileID: -891678610, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 8
+    buttonIconSprite: {fileID: -848101560, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 9
+    buttonIconSprite: {fileID: 928028913, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 10
+    buttonIconSprite: {fileID: -1501740912, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 11
+    buttonIconSprite: {fileID: 340971650, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNone: {fileID: -2941640751334548564, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteNonActivated: {fileID: 6099684910425994492, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    buttonSpriteActivated: {fileID: -1197053416967242941, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   CurrentButtonInd: 0
+  currentDifficulty: 0
+  difficultySettings:
+  - difficultyLevel: 0
+    buttonsToUse: 0100000003000000
+    energyDrainRateMultiplier: 1
+  - difficultyLevel: 1
+    buttonsToUse: 00000000010000000200000003000000
+    energyDrainRateMultiplier: 1
+  - difficultyLevel: 2
+    buttonsToUse: 00000000010000000200000003000000
+    energyDrainRateMultiplier: 1.25
+  - difficultyLevel: 3
+    buttonsToUse: 000000000100000002000000030000000400000005000000
+    energyDrainRateMultiplier: 1.5
+  - difficultyLevel: 4
+    buttonsToUse: 0000000001000000020000000300000004000000050000000600000009000000
+    energyDrainRateMultiplier: 1.75
+  - difficultyLevel: 5
+    buttonsToUse: 0000000001000000020000000300000004000000050000000600000009000000070000000a000000080000000b000000
+    energyDrainRateMultiplier: 2
+  EasyDifficultyScoreThreshold: 20
+  MediumDifficultyScoreThreshold: 40
+  HardDifficultyScoreThreshold: 60
+  ExtremeDifficultyScoreThreshold: 80
+  NightmareDifficultyScoreThreshold: 100

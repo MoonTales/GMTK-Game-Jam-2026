@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using Types = System.Types;
 
@@ -24,7 +25,7 @@ namespace Managers
         // ————— Internal Variables ————— //
         private Types.GameState currentGameState = Types.GameState.MainMenu; public Types.GameState GetCurrentGameState() { return currentGameState; }
         private Types.GameState previousGameState = Types.GameState.MainMenu; public Types.GameState GetPreviousGameState() { return previousGameState; }
-        
+        private Coroutine _scoreCoroutine;
         // ————— External Variables ————— //
         public void Start()
         {
@@ -33,6 +34,42 @@ namespace Managers
             previousGameState = currentGameState;
             // for now, we will assume the game starts
             EventBroadcaster.Broadcast_GameStateChanged(currentGameState);
+        }
+
+
+
+        public void StartGameScore()
+        {
+            currentScore = 0;
+    
+            // Stop any existing coroutine first to avoid multiple overlapping loops
+            if (_scoreCoroutine != null)
+            {
+                StopCoroutine(_scoreCoroutine);
+            }
+    
+            _scoreCoroutine = StartCoroutine(StartGameScoreCoroutine());
+        }
+        
+        public void StopGameScore()
+        {
+            if (_scoreCoroutine != null)
+            {
+                StopCoroutine(_scoreCoroutine);
+                _scoreCoroutine = null;
+            }
+        }
+        
+        private IEnumerator StartGameScoreCoroutine()
+        {
+            // Reuse the yield instruction to avoid garbage collector allocations
+            var wait = new WaitForSeconds(1f);
+
+            while (true)
+            {
+                yield return wait;
+                currentScore += 1;
+            }
         }
         
     }
