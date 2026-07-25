@@ -45,9 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Managers.UAudio
   _poolSize: 10
+  _musicPoolSize: 5
   ExampleAudioClip: {fileID: 0}
   RATP_BacktrackSound: {fileID: 8300000, guid: 2e37137bd04c4d64481dcb6869e442bc, type: 3}
   RATP_ButtonPressSound: {fileID: 8300000, guid: 1369b241878f998468ff155641fbed49, type: 3}
   RATP_ButtonFailSound: {fileID: 8300000, guid: a358961be0a8c6040b7d1ff6a1c8fc8b, type: 3}
+  RATP_BacktrackMusic: {fileID: 8300000, guid: de2cfe32e4e40d54aa54d7e30b3c79cb, type: 3}
+  RATP_WarningAlarmMusic: {fileID: 8300000, guid: 3f663e7654ece8243bf9bf34b285bd1f, type: 3}
+  RatP_IntenseMusic: {fileID: 8300000, guid: 823e75d7a1e943641944d492048b479a, type: 3}
   muteSFX: 0
   sfxValue: 1

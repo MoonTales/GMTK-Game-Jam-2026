@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 namespace Rat_P
@@ -30,7 +31,7 @@ namespace Rat_P
         [Header("Setup Params")]
         [SerializeField] private List<ButtonIconData> _buttonIconDataList = new List<ButtonIconData>();
 
-        private float minigame_timelimit = 60f; // seconds
+        private float minigame_timelimit = 30f; // seconds
         private float elapsedTime = 0f;
 
         private bool bIsBacktracking = false; 
@@ -40,6 +41,10 @@ namespace Rat_P
         public int CurrentButtonInd = 0; 
         public int GetCurrentButtonInd() { return CurrentButtonInd; }
 
+        
+        private bool _isWarningPlaying = false;
+        private bool _isIntensePlaying = false;
+        
         public void Update()
         {
             if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
@@ -50,6 +55,33 @@ namespace Rat_P
             {
                 GridBacktrack();
             }
+    
+            // Check music state using time remaining percentage (works whether UI is open or closed)
+            float timeRemainingPercent = 1f - (elapsedTime / minigame_timelimit);
+
+            // Warning Alarm (< 50% time)
+            if (timeRemainingPercent < 0.5f && !_isWarningPlaying)
+            {
+                _isWarningPlaying = true;
+                UAudio.Instance.PlayMusic(UAudio.Instance.RATP_WarningAlarmMusic);
+            }
+            else if (timeRemainingPercent >= 0.5f && _isWarningPlaying)
+            {
+                _isWarningPlaying = false;
+                UAudio.Instance.StopMusic(UAudio.Instance.RATP_WarningAlarmMusic);
+            }
+
+            // Intense Music (< 15% time)
+            if (timeRemainingPercent < 0.15f && !_isIntensePlaying)
+            {
+                _isIntensePlaying = true;
+                UAudio.Instance.PlayMusic(UAudio.Instance.RatP_IntenseMusic);
+            }
+            else if (timeRemainingPercent >= 0.15f && _isIntensePlaying)
+            {
+                _isIntensePlaying = false;
+                UAudio.Instance.StopMusic(UAudio.Instance.RatP_IntenseMusic);
+            }
         }
 
         public void Start()
@@ -57,7 +89,7 @@ namespace Rat_P
             if (contentParent)
             {
                 currentPanelInstance = Instantiate(contentParent.gameObject, contentParent.parent);
-                currentPanelInstance.SetActive(false); 
+                 
 
                 // Direct search for Slider named "Timer_Slider" among inactive children
                 Slider[] sliders = currentPanelInstance.GetComponentsInChildren<Slider>(true);
@@ -74,6 +106,9 @@ namespace Rat_P
                 {
                     StartCoroutine(UpdateTimerSlider());
                 }
+                
+                // at the very end, we diable
+                currentPanelInstance.SetActive(false);
             }
         }
 
@@ -114,10 +149,12 @@ namespace Rat_P
         {
             if (currentPanelInstance.activeSelf)
             {
+                UAudio.Instance.StopMusic_RATP_BacktrackMusic();
                 CloseRatP();
             }
             else
             {
+                UAudio.Instance.PlayMusic_RATP_BacktrackMusic();
                 OpenRatP();
             }
         }
@@ -154,6 +191,8 @@ namespace Rat_P
                 if (currentPanelInstance != null && currentPanelInstance.activeInHierarchy && _timerSlider != null)
                 {
                     _timerSlider.value = 1f - (elapsedTime / minigame_timelimit);
+                    // clamp
+                    _timerSlider.value = Mathf.Clamp01(_timerSlider.value);
                 }
 
                 yield return null;

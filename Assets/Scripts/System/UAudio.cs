@@ -11,6 +11,10 @@ namespace Managers
     {
         [SerializeField] private int _poolSize = 10;
         private List<AudioSource> _sources;
+        
+        // Now we will sewtup a matching system for Music, we will have up to 5 musics Sources
+        [SerializeField] private int _musicPoolSize = 5;
+        private List<AudioSource> _musicSources;
 
         //public float sfxvolumeslider = 1;
         
@@ -21,6 +25,12 @@ namespace Managers
         public AudioClip RATP_BacktrackSound;
         public AudioClip RATP_ButtonPressSound;
         public AudioClip RATP_ButtonFailSound;
+        
+        [Header("RatP Music")]
+        public AudioClip RATP_BacktrackMusic;
+        public AudioClip RATP_WarningAlarmMusic;
+        public AudioClip RatP_IntenseMusic;
+        
         
         [Header("Mutes")]
         public bool muteSFX = false;
@@ -37,6 +47,7 @@ namespace Managers
 
             // Create a pool of AudioSources we can reuse
             _sources = new List<AudioSource>();
+            _musicSources = new List<AudioSource>();
             for (int i = 0; i < _poolSize; i++)
             {
                 AudioSource src = gameObject.AddComponent<AudioSource>();
@@ -44,21 +55,17 @@ namespace Managers
                 src.spatialBlend = 0f; // 2D by default
                 _sources.Add(src);
             }
-
-            AudioSource mus = gameObject.AddComponent<AudioSource>();
-            mus.playOnAwake = false;
-            mus.spatialBlend = 0f;
-            mus.loop = true;
-            mus.volume = 0;
+            for (int i = 0; i < _musicPoolSize; i++)
+            {
+                AudioSource mus = gameObject.AddComponent<AudioSource>();
+                mus.playOnAwake = false;
+                mus.spatialBlend = 0f; // 2D by default
+                mus.loop = true;
+                _musicSources.Add(mus);
+            }
+            
         }
-
-        /// <summary>
-        /// Play a sound effect at a given volume multiplier.  
-        /// Volume can be higher than 1.0f to boost the clip.  
-        /// If a GameObject is provided, sound plays from its world position (3D).  
-        /// </summary>
-        /// 
-
+        
         private void Start()
         {
             sfxValue = 1;
@@ -80,6 +87,73 @@ namespace Managers
             src.pitch = UnityEngine.Random.Range(1 - deviation, 1 + deviation);
             src.Play();
         }
+        
+        public void PlayMusic(AudioClip clip, float volume = 1f, float deviation = 0f, float playbackSpeed = 1f)
+        {
+            if (muteSFX) return;
+            if (clip == null) return;
+            // if its already playing in any other source, dont play it
+            if (_musicSources.Exists(src => src.clip == clip && src.isPlaying)) return;
+
+            AudioSource src = GetFreeMusicSource();
+            if (src == null) return;
+
+            src.spatialBlend = 0f; // Music is always 2D
+            src.volume = (volume * sfxValue);
+            src.clip = clip;
+            src.pitch = UnityEngine.Random.Range(1 - deviation, 1 + deviation);
+            src.loop = true;
+            src.Play();
+        }
+        
+        public void StopMusic(AudioClip clip)
+        {
+            foreach (var src in _musicSources)
+            {
+                if (src.clip == clip && src.isPlaying)
+                {
+                    src.Stop();
+                    break;
+                }
+            }
+        }
+        
+        public void StopAllMusic()
+        {
+            foreach (var src in _musicSources)
+            {
+                if (src.isPlaying)
+                {
+                    src.Stop();
+                }
+            }
+        }
+        
+        public void PlayMusic_RATP_BacktrackMusic()
+        {
+            PlayMusic(RATP_BacktrackMusic, volume: 1f, deviation: 0.1f);
+        }
+        public void PlayMusic_RATP_WarningAlarmMusic()
+        {
+            PlayMusic(RATP_WarningAlarmMusic, volume: 1f, deviation: 0.1f);
+        }
+        public void PlayMusic_RatP_IntenseMusic()
+        {
+            PlayMusic(RatP_IntenseMusic, volume: 1f, deviation: 0.1f);
+        }
+        public void StopMusic_RATP_BacktrackMusic()
+        {
+            StopMusic(RATP_BacktrackMusic);
+        }
+        public void StopMusic_RATP_WarningAlarmMusic()
+        {
+            StopMusic(RATP_WarningAlarmMusic);
+        }
+        public void StopMusic_RatP_IntenseMusic()
+        {
+            StopMusic(RatP_IntenseMusic);
+        }
+
 
         
         //This is called like:
@@ -122,6 +196,16 @@ namespace Managers
             }
             // If none are free, just reuse the first
             return _sources[0];
+        }
+        private AudioSource GetFreeMusicSource()
+        {
+            foreach (var src in _musicSources)
+            {
+                if (!src.isPlaying)
+                    return src;
+            }
+            // If none are free, just reuse the first
+            return _musicSources[0];
         }
     }
     
