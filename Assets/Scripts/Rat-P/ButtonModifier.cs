@@ -31,6 +31,8 @@ public enum ButtonOption
     A,
     S,
     D,
+    Q,
+    E,
     NONE
 }
 
@@ -73,6 +75,8 @@ public class ButtonModifier : MonoBehaviour
     private InputAction _sKeyAction;
     private InputAction _aKeyAction;
     private InputAction _dKeyAction;
+    private InputAction _qKeyAction;
+    private InputAction _eKeyAction;
 
     public void SetButtonIndex(int index) => ButtonIndex = index;
     public void SetButtonIconData(ButtonIconData data) => CurrentButtonIconData = data;
@@ -105,12 +109,16 @@ public class ButtonModifier : MonoBehaviour
         _sKeyAction = new InputAction("S_Key", binding: "<Keyboard>/s");
         _aKeyAction = new InputAction("A_Key", binding: "<Keyboard>/a");
         _dKeyAction = new InputAction("D_Key", binding: "<Keyboard>/d");
+        _qKeyAction = new InputAction("Q_Key", binding: "<Keyboard>/q");
+        _eKeyAction = new InputAction("E_Key", binding: "<Keyboard>/e");
 
         // Bind responses
         _wKeyAction.performed += ctx => OnInputTriggered(ButtonOption.W);
         _sKeyAction.performed += ctx => OnInputTriggered(ButtonOption.S);
         _aKeyAction.performed += ctx => OnInputTriggered(ButtonOption.A);
         _dKeyAction.performed += ctx => OnInputTriggered(ButtonOption.D);
+        _qKeyAction.performed += ctx => OnInputTriggered(ButtonOption.Q);
+        _eKeyAction.performed += ctx => OnInputTriggered(ButtonOption.E);
     }
 
     private void Start()
@@ -247,6 +255,8 @@ public class ButtonModifier : MonoBehaviour
         _sKeyAction?.Enable();
         _aKeyAction?.Enable();
         _dKeyAction?.Enable();
+        _qKeyAction?.Enable();
+        _eKeyAction?.Enable();
     }
 
     private void DisableAllActions()
@@ -255,6 +265,8 @@ public class ButtonModifier : MonoBehaviour
         _aKeyAction?.Disable();
         _sKeyAction?.Disable();
         _dKeyAction?.Disable();
+        _qKeyAction?.Disable();
+        _eKeyAction?.Disable();
     }
 
     private void OnDisable()

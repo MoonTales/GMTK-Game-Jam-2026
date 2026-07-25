@@ -60,4 +60,8 @@ MonoBehaviour:
     buttonIconSprite: {fileID: -737916650687340079, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   - buttonOption: 3
     buttonIconSprite: {fileID: -5615462542933208157, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 4
+    buttonIconSprite: {fileID: 3106320243359673103, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 5
+    buttonIconSprite: {fileID: 1098667190825622092, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
   CurrentButtonInd: 0
