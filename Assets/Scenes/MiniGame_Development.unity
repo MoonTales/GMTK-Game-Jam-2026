@@ -119,57 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &453872428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 453872430}
-  - component: {fileID: 453872429}
-  m_Layer: 0
-  m_Name: UAudio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &453872429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453872428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b7a9e10781b6e74d9852a127d242d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Managers.UAudio
-  _poolSize: 10
-  ExampleAudioClip: {fileID: 0}
-  RATP_BacktrackSound: {fileID: 8300000, guid: 2e37137bd04c4d64481dcb6869e442bc, type: 3}
-  RATP_ButtonPressSound: {fileID: 8300000, guid: 1369b241878f998468ff155641fbed49, type: 3}
-  RATP_ButtonFailSound: {fileID: 8300000, guid: a358961be0a8c6040b7d1ff6a1c8fc8b, type: 3}
-  muteSFX: 0
-  sfxValue: 1
---- !u!4 &453872430
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453872428}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 801.5428, y: 719.8318, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671008834
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,68 +335,9 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &1410857751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1410857752}
-  - component: {fileID: 1410857753}
-  m_Layer: 0
-  m_Name: Rat-P System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1410857752
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410857751}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 872.4645, y: 617.35443, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1410857753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410857751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9df0ead13d0c294dba0d949344cfaf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Rat_P.RatPSystem
-  contentParent: {fileID: 1031630912862965677, guid: a1aa10d3c7b688e4796945be970aa8ae, type: 3}
-  buttonPrefab: {fileID: 1790955821394128457, guid: 026b22ab16c15c84585d1494f96ca61e, type: 3}
-  wirePrefab: {fileID: 0}
-  rows: 3
-  cols: 4
-  buttonSize: 50
-  spacing: 100
-  _buttonIconDataList:
-  - buttonOption: 0
-    buttonIconSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - buttonOption: 2
-    buttonIconSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  CurrentButtonInd: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 835597669}
   - {fileID: 671008837}
-  - {fileID: 1410857752}
-  - {fileID: 453872430}

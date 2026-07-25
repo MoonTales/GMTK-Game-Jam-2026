@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8253382129450575738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2862322467537496175}
+  - component: {fileID: 5458356801552452141}
+  m_Layer: 0
+  m_Name: Rat-P System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2862322467537496175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8253382129450575738}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 872.4645, y: 617.35443, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5458356801552452141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8253382129450575738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9df0ead13d0c294dba0d949344cfaf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rat_P.RatPSystem
+  contentParent: {fileID: 1031630912862965677, guid: a1aa10d3c7b688e4796945be970aa8ae, type: 3}
+  buttonPrefab: {fileID: 1790955821394128457, guid: 026b22ab16c15c84585d1494f96ca61e, type: 3}
+  wirePrefab: {fileID: 0}
+  rows: 3
+  cols: 5
+  buttonSize: 50
+  spacing: 100
+  _buttonIconDataList:
+  - buttonOption: 0
+    buttonIconSprite: {fileID: 8723877772056563361, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 1
+    buttonIconSprite: {fileID: -8330337066692772122, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 2
+    buttonIconSprite: {fileID: -737916650687340079, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  - buttonOption: 3
+    buttonIconSprite: {fileID: -5615462542933208157, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+  CurrentButtonInd: 0
