@@ -16,13 +16,16 @@ namespace Managers
         [SerializeField] private Types.GameState defaultGameState = Types.GameState.MainMenu;
         
         
+        
+        // ————— Score Related Variable ————— //
+        [SerializeField] private int currentScore = 0; public int GetCurrentScore() { return currentScore; } public void SetCurrentScore(int score) { currentScore = score; }
+        
+        
         // ————— Internal Variables ————— //
         private Types.GameState currentGameState = Types.GameState.MainMenu; public Types.GameState GetCurrentGameState() { return currentGameState; }
         private Types.GameState previousGameState = Types.GameState.MainMenu; public Types.GameState GetPreviousGameState() { return previousGameState; }
         
         // ————— External Variables ————— //
-        
-        
         public void Start()
         {
             // Initialize the game state
