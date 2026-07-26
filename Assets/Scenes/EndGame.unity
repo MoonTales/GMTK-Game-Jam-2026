@@ -420,6 +420,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -102
       objectReference: {fileID: 0}
+    - target: {fileID: 2690973156628707834, guid: ef554caad5d0ee844884f339740d504e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1636351913, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
     - target: {fileID: 2731332020619958567, guid: ef554caad5d0ee844884f339740d504e, type: 3}
       propertyPath: m_Name
       value: GameEnd_Canvas
@@ -504,6 +508,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6666407697591997008, guid: ef554caad5d0ee844884f339740d504e, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 1696648085, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
+    - target: {fileID: 6666407697591997008, guid: ef554caad5d0ee844884f339740d504e, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 1696648085, guid: 85f0f627875cecc408ef9df2c4492cd6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
