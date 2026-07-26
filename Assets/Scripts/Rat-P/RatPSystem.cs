@@ -220,7 +220,7 @@ namespace Rat_P
 
             if (_scoreText)
             {
-                _scoreText.text = "Score: " + currentGameScore.ToString();
+                _scoreText.text = currentGameScore.ToString();
             }
         }
 

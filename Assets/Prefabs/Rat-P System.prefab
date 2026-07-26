@@ -120,21 +120,21 @@ MonoBehaviour:
     energyDrainRateMultiplier: 1
   - difficultyLevel: 1
     buttonsToUse: 00000000010000000200000003000000
-    energyDrainRateMultiplier: 1.25
+    energyDrainRateMultiplier: 1.4
   - difficultyLevel: 2
     buttonsToUse: 0000000001000000020000000300000004000000
-    energyDrainRateMultiplier: 1.5
+    energyDrainRateMultiplier: 1.75
   - difficultyLevel: 3
     buttonsToUse: 000000000100000002000000030000000400000005000000
     energyDrainRateMultiplier: 2
   - difficultyLevel: 4
-    buttonsToUse: 0000000001000000020000000300000004000000050000000600000009000000
+    buttonsToUse: 000000000100000002000000030000000400000005000000060000000900000007000000
     energyDrainRateMultiplier: 2.5
   - difficultyLevel: 5
     buttonsToUse: 0000000001000000020000000300000004000000050000000600000009000000070000000a000000080000000b000000
     energyDrainRateMultiplier: 3.5
   EasyDifficultyScoreThreshold: 250
   MediumDifficultyScoreThreshold: 500
-  HardDifficultyScoreThreshold: 1000
-  ExtremeDifficultyScoreThreshold: 1300
-  NightmareDifficultyScoreThreshold: 1600
+  HardDifficultyScoreThreshold: 900
+  ExtremeDifficultyScoreThreshold: 1200
+  NightmareDifficultyScoreThreshold: 1500

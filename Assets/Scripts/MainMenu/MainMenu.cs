@@ -24,6 +24,8 @@ public class MainMenu : MonoBehaviour
         _buttonQuitGame.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(QuitGame);
         _buttonStartGame.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => OnButtonHover(_buttonStartGame.GetComponent<UnityEngine.UI.Button>()));
         _buttonQuitGame.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => OnButtonHover(_buttonQuitGame.GetComponent<UnityEngine.UI.Button>()));
+        
+        UAudio.Instance.PlayMenuMusic(volume: 0.5f);
     }
     
     
@@ -37,6 +39,7 @@ public class MainMenu : MonoBehaviour
         // Load the first level
         RatPSystem.Instance.InitializeGame();
         UAudio.Instance.PlayRATP_ButtonSuccessSound();
+        UAudio.Instance.StopMenuMusic();
         UnityEngine.SceneManagement.SceneManager.LoadScene("MiniGame_Development");
     }
     

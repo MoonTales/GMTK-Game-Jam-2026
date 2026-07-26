@@ -34,6 +34,10 @@ namespace Managers
         public AudioClip RATP_WarningAlarmMusic;
         public AudioClip RatP_IntenseMusic;
         
+        [Header("Menu Music")]
+        public AudioClip MenuMusic;
+        
+        
         
         [Header("Mutes")]
         public bool muteSFX = false;
@@ -132,6 +136,15 @@ namespace Managers
             }
         }
         
+        public void PlayMenuMusic(float volume = 1f)
+        {
+            PlayMusic(MenuMusic, volume: 1f, deviation: 0.0f);
+        }
+        public void StopMenuMusic()
+        {
+            StopMusic(MenuMusic);
+        }
+        
         public void PlayRATP_SuccessSound()
         {
             PlaySFX(RATP_SuccessSound, volume: 1f, deviation: 0.1f);
@@ -146,15 +159,15 @@ namespace Managers
         }
         public void PlayMusic_RATP_BacktrackMusic()
         {
-            PlayMusic(RATP_BacktrackMusic, volume: 1f, deviation: 0.1f);
+            PlayMusic(RATP_BacktrackMusic, volume: 1f, deviation: 0.0f);
         }
         public void PlayMusic_RATP_WarningAlarmMusic()
         {
-            PlayMusic(RATP_WarningAlarmMusic, volume: 1f, deviation: 0.1f);
+            PlayMusic(RATP_WarningAlarmMusic, volume: 1f, deviation: 0.0f);
         }
         public void PlayMusic_RatP_IntenseMusic()
         {
-            PlayMusic(RatP_IntenseMusic, volume: 1f, deviation: 0.1f);
+            PlayMusic(RatP_IntenseMusic, volume: 1f, deviation: 0.0f);
         }
         public void StopMusic_RATP_BacktrackMusic()
         {

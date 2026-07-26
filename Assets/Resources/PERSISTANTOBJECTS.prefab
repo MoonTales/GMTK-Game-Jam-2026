@@ -183,6 +183,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 999984608513020709}
     m_Modifications:
     - target: {fileID: 1246195609097084543, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
+      propertyPath: MenuMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 43073cd43a06dc7468649dd93c273d37, type: 3}
+    - target: {fileID: 1246195609097084543, guid: f03277ed329cf8a428255fbb528ce178, type: 3}
       propertyPath: RATP_SuccessSound
       value: 
       objectReference: {fileID: 8300000, guid: 20c9e7b4d2ac2f144bc4f0d3f70e7f29, type: 3}

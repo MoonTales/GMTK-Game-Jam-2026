@@ -24,7 +24,7 @@ public class GameEnd : MonoBehaviour
             TMP_Text tmpText = _textGameScore.GetComponent<TMP_Text>();
             if (tmpText != null)
             {
-                tmpText.text = "Score: " + GameStateManager.Instance.GetCurrentScore().ToString();
+                tmpText.text = GameStateManager.Instance.GetCurrentScore().ToString();
             }
             else
             {
@@ -32,12 +32,16 @@ public class GameEnd : MonoBehaviour
             }
             
         }
+        
+        UAudio.Instance.PlayMenuMusic(0.5f);
     }
 
 
     private void OnButtonbReplayClicked()
     {
         // Reload the current scene to restart the game
+        UAudio.Instance.PlayRATP_ButtonSuccessSound();
+        UAudio.Instance.StopMenuMusic();
         UnityEngine.SceneManagement.SceneManager.LoadScene("Scenes/MainMenu");
     }
 }

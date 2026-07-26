@@ -408,6 +408,14 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 2289986505705624175, guid: ef554caad5d0ee844884f339740d504e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -214
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452083706737272377, guid: ef554caad5d0ee844884f339740d504e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -102
+      objectReference: {fileID: 0}
     - target: {fileID: 2731332020619958567, guid: ef554caad5d0ee844884f339740d504e, type: 3}
       propertyPath: m_Name
       value: GameEnd_Canvas
