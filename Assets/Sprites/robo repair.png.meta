@@ -4016,7 +4016,7 @@ TextureImporter:
         width: 482
         height: 238
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4033,12 +4033,12 @@ TextureImporter:
       name: robo repair_136
       rect:
         serializedVersion: 2
-        x: 736
-        y: 463
+        x: 853
+        y: 468
         width: 137
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4055,12 +4055,12 @@ TextureImporter:
       name: robo repair_137
       rect:
         serializedVersion: 2
-        x: 928
-        y: 463
+        x: 1045
+        y: 468
         width: 137
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4077,12 +4077,12 @@ TextureImporter:
       name: robo repair_138
       rect:
         serializedVersion: 2
-        x: 928
-        y: 404
+        x: 1045
+        y: 409
         width: 137
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4099,12 +4099,12 @@ TextureImporter:
       name: robo repair_139
       rect:
         serializedVersion: 2
-        x: 736
-        y: 405
+        x: 853
+        y: 410
         width: 137
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4113,6 +4113,72 @@ TextureImporter:
       bones: []
       spriteID: f17294fad6bfe8e40a391020aa08d85c
       internalID: 33026980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_140
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 352
+        width: 137
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02466875cd5bf3e428986110fdb583f4
+      internalID: 1636351913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_141
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 352
+        width: 137
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cc9bd3f3af6914aa3f92c50dfe1a8e
+      internalID: 1696648085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo repair_142
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 307
+        width: 200
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e15f4b3ebc6f643a8f78ef94d85073
+      internalID: 889126962
       vertices: []
       indices: 
       edges: []
@@ -4182,6 +4248,9 @@ TextureImporter:
       robo repair_138: -1368577377
       robo repair_139: 33026980
       robo repair_14: -7567647510591971744
+      robo repair_140: 1636351913
+      robo repair_141: 1696648085
+      robo repair_142: 889126962
       robo repair_15: -9166041923931325356
       robo repair_16: -2406970078962059153
       robo repair_17: -3144738747274942117

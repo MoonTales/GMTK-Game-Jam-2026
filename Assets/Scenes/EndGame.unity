@@ -343,6 +343,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7566812020875884874, guid: 479b28b96b30d0342a44c981edd028e2, type: 3}
+      propertyPath: m_Size.x
+      value: 147.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7613607483676036207, guid: 479b28b96b30d0342a44c981edd028e2, type: 3}
       propertyPath: m_Name
       value: Space Background
