@@ -147,15 +147,15 @@ namespace Managers
         
         public void PlayRATP_SuccessSound()
         {
-            PlaySFX(RATP_SuccessSound, volume: 1f, deviation: 0.1f);
+            PlaySFX(RATP_SuccessSound, volume: 1f, deviation: 0.0f);
         }
         public void PlayRATP_ElectricUpgradeSound(float volume = 1f)
         {
-            PlaySFX(RATP_ElectricUpgradeSound, volume: 1f, deviation: 0.1f);
+            PlaySFX(RATP_ElectricUpgradeSound, volume: 1f, deviation: 0.0f);
         }
         public void PlayRATP_ButtonSuccessSound()
         {
-            PlaySFX(RATP_ButtonSuccessSound, volume: 1f, deviation: 0.1f);
+            PlaySFX(RATP_ButtonSuccessSound, volume: 1f, deviation: 0.0f);
         }
         public void PlayMusic_RATP_BacktrackMusic()
         {
@@ -202,16 +202,16 @@ namespace Managers
         
         public void PlayRATP_PlayGridBacktrackSound()
         {
-            PlaySFX(RATP_BacktrackSound, volume: 1f, deviation: 0.1f);
+            PlaySFX(RATP_BacktrackSound, volume: 1f, deviation: 0.0f);
         }
         
         public void PlayRATP_ButtonPressSound()
         {
-            PlaySFX(RATP_ButtonPressSound, volume: 1f, deviation: 0.1f);
+            PlaySFX(RATP_ButtonPressSound, volume: 1f, deviation: 0.0f);
         }
         public void PlayRATP_ButtonFailSound()
         {
-            PlaySFX(RATP_ButtonFailSound, volume: 1f, deviation: 0.1f);
+            PlaySFX(RATP_ButtonFailSound, volume: 1f, deviation: 0.0f);
         }
         
 
