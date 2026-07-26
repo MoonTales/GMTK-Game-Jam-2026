@@ -151,14 +151,6 @@ namespace Rat_P
         }
         public void Update()
         {
-            if (Keyboard.current != null && Keyboard.current.pKey.wasPressedThisFrame)
-            {
-                ToggleRatP();
-            }
-            if (Keyboard.current != null && Keyboard.current.bKey.wasPressedThisFrame)
-            {
-                GridBacktrack();
-            }
     
             // Check music state using time remaining percentage (works whether UI is open or closed)
             // Warning Alarm (< 50% time)
